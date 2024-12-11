@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <title>Clean Blog - Start Bootstrap Theme</title>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" Hrel="stylesheet"
+          type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css"/>
+    <link href="../static/css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<script>
+    AOS.init();
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const boxes = document.querySelectorAll('.animate-box');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        boxes.forEach((box) => observer.observe(box));
+    });
+</script>
+
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img style="width: 20%; display: inline-block"
+                                              src="{{ url_for('static', filename='img/ufaricon.png') }}"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/ima">IMA</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('../static/img/icons.png')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>UFAR</h1>
+                    <span class="subheading">French University in Armenia</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container py-4">
+    <div class="row gx-4 gy-4">
+        <div class="col-md-12">
+            <div class="p-4 bg-light border border-dark rounded shadow-lg h-100 text-center" data-aos="fade-down"
+                 data-aos-duration="1800">
+                <h5 class="text-success font-weight-bold mb-3"><strong>PROFESSIONALIZATION</strong></h5>
+                One of the differentiating elements of UFAR is professionalization. A factual proof lies in the fact
+                that more than 92% of the alumni of the 15 UFAR promotions are working. To achieve a very high
+                employability of its students, the university constantly studies the needs of the market. A vector of
+                professionalization is therefore the design of courses and programs in relation to the expectations of
+                companies. Similarly, teaching alternates theory and practice, with many case studies and industrial
+                projects, led by a multitude of professional teachers in the field. To strengthen this axis of
+                professionalization, Accelerator 28 (hyperlink to the accelerator) was created at the end of 2020, a
+                support structure promoting entrepreneurship in Armenia.
+                Professionalization internships in Armenia and abroad allow students to be best prepared for integration
+                into the world of work. It should also be considered that many students work while pursuing their
+                studies, which considerably strengthens the study/profession link.
+                Finally, dedicated teams are in charge of supporting students in the emergence of their professional
+                projects, while helping them acquire the necessary job search techniques.
+                Specific support on the subject of integration is provided in the form of compulsory courses and
+                personalized advice.
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="p-4 bg-white border border-dark rounded shadow-sm h-100 text-center" data-aos="fade-down"
+                 data-aos-duration="1600">
+                <h5 class="text-warning font-weight-bold mb-3"><strong>INTEGRITY</strong></h5>
+                The value of integrity was at the very foundation of the creation of UFAR. The university considers it
+                necessary to develop and ensure a culture of integrity. As soon as they enter the University, students
+                know that impartial evaluation, examination monitoring and disciplinary committees make UFAR an
+                institution of integrity. This integrity is all the more important as students appropriate it and become
+                its bearers in their daily actions and in their professional lives. Indeed, integrity is implemented in
+                UFAR procedures but also in concrete projects with a strong ethical connotation. The university's desire
+                is indeed to embody this value of integrity through concrete actions.
+                This is how UFAR has set up a Plan for the Reintegration of Student Soldiers (PRES) and a program to
+                help students with academic difficulties upon returning from military service, the PREM’S (Plan for the
+                Reintegration of Ex-Military Students towards Success). This makes it possible to show examples of
+                integrity to students to encourage them to continue to embody this value as ambassadors of UFAR.
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="p-4 bg-body border border-dark rounded shadow-sm h-100 text-center" data-aos="fade-down"
+                 data-aos-duration="2000">
+                <h5 class="text-info font-weight-bold mb-3"><strong>GATEWAY TO THE WORLD</strong></h5>
+                A differentiating element of UFAR compared to its competitors is the link that UFAR creates for its
+                students with Europe and the world. By obtaining a double degree (European/French and Armenian), by
+                deepening foreign language (particularly French), by being in frequent contact with foreign teachers,
+                UFAR students benefit from particularly strong international links. The solidity of the relations
+                between UFAR and its associated universities reinforces UFAR as a true gateway to Europe. Finally, UFAR
+                takes particular care to develop the French language among its students and in the country.
+                The differentiating element of UFAR "Gateway to the World" has different components, the main one being
+                the development of language learning. An investment in language learning will continue to be made not
+                only for students but also for staff.
+                Connecting students with many teachers (80 per year) strengthens access to international realities.
+                International enrichment also comes from UFAR's links with different structures in French-speaking
+                countries (OIF, AUF, local authorities, French-speaking agencies, etc.).
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row gx-4 gy-4">
+        <!-- Program Highlights -->
+        <div class="col-md-4">
+            <div class="p-4 bg-white border border-dark rounded shadow-sm h-100 text-center" data-aos="fade-down"
+                 data-aos-duration="1000">
+                <h5 class="text-primary font-weight-bold mb-3"><strong>Program Highlights</strong></h5>
+                <ul class="list-unstyled text-muted">
+                    <li><strong>1.</strong> Advanced AI studies: digital imaging, 3D graphics, data processing, and robotics integration.
+                    </li>
+                    <li><strong>2.</strong>Dual diplomas from University of Toulouse III and French University in Armenia.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-Career Opportunities -->
+        <div class="col-md-4">
+            <div class="p-4 bg-light border border-dark rounded shadow-lg h-100 text-center" data-aos="fade-down"
+                 data-aos-duration="1200">
+                <h5 class="text-success font-weight-bold mb-3"><strong>Career Opportunities</strong></h5>
+                <ul class="list-unstyled text-muted">
+                    <li><strong>1.</strong>Aeronautics and Space</li>
+                    <li><strong>2.</strong>Healthcare</li>
+                    <li><strong>3.</strong>Robotics</li>
+                    <li><strong>4.</strong>Image Processing</li>
+                    <li><strong>5.</strong>Smart Cities and Industry 4.0</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-Program Overview -->
+        <div class="col-md-4">
+            <div class="p-4 bg-body border border-dark rounded shadow-sm h-100 text-center" data-aos="fade-down"
+                 data-aos-duration="1400">
+                <h5 class="text-danger font-weight-bold mb-3"><strong>Program Overview</strong></h5>
+                <ul class="list-unstyled text-muted">
+                    <li><strong>1.</strong>Four semesters, 120 ECTS credits</li>
+                    <li><strong>2.</strong>Teaching language: English</li>
+                    <li><strong>3.</strong>Mandatory 5-month internship</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.html' %}
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
